@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Anderson</title>
+  <meta name="description" content="Personal site of Eric Anderson, software developer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Eric Anderson</h1>
+    <p class="tagline">Software developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi, I'm Eric. I build backend services and tools. This is where I keep notes on things I'm working on.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="cards">
+        <li>
+          <h3>Project one</h3>
+          <p>A short description of what it does and why it's interesting.</p>
+          <a href="#">View on GitHub</a>
+        </li>
+        <li>
+          <h3>Project two</h3>
+          <p>Another project. Replace this with something real.</p>
+          <a href="#">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Find me on <a href="https://github.com/YOUR-USERNAME">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Eric Anderson</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
