@@ -3,50 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric Anderson</title>
-  <meta name="description" content="Personal site of Eric Anderson, software developer.">
+  <title>Eric Anderson — Software Engineer, ML &amp; High-Scale Services</title>
+  <meta name="description" content="Eric Anderson, software engineer with 10+ years building high-scale services, ML systems, and signal-analysis software.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Eric Anderson</h1>
-    <p class="tagline">Software developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Eric Anderson</a>
+      <nav aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#patent">Patent</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>Hi, I'm Eric. I build backend services and tools. This is where I keep notes on things I'm working on.</p>
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Software Engineer · ML &amp; High-Scale Services</p>
+      <h1>I turn complex data problems into reliable systems at scale.</h1>
+      <p class="lead">
+        I'm a software engineer at Amazon Prime Video, where I build ML personalization and
+        content services that run at hundreds of thousands of requests per second. Over 10+ years,
+        including 7.5 at Tektronix, I've built high-scale services, ML systems, and signal-analysis
+        software, including a patented protocol-decoding language.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#contact">Let's talk</a>
+        <a class="button" href="#work">See my work</a>
+      </div>
+      <p class="location">Salem, OR · Remote</p>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="cards">
-        <li>
-          <h3>Project one</h3>
-          <p>A short description of what it does and why it's interesting.</p>
-          <a href="#">View on GitHub</a>
-        </li>
-        <li>
-          <h3>Project two</h3>
-          <p>Another project. Replace this with something real.</p>
-          <a href="#">View on GitHub</a>
-        </li>
-      </ul>
+    <section class="wrap stats" aria-label="Results">
+      <div class="stat">
+        <span class="num">A/B-proven</span>
+        <span class="label">increase in hours watched on Prime Video, driven by my ML artwork personalization</span>
+      </div>
+      <div class="stat">
+        <span class="num">300K+</span>
+        <span class="label">requests per second served at 40 ms p99.9 latency</span>
+      </div>
+      <div class="stat">
+        <span class="num">70%</span>
+        <span class="label">fewer content policy reviews from delta-based filtering</span>
+      </div>
+      <div class="stat">
+        <span class="num">3&nbsp;mo&nbsp;→&nbsp;2&nbsp;wk</span>
+        <span class="label">to add a new protocol decoder, using a language I designed</span>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Find me on <a href="https://github.com/YOUR-USERNAME">GitHub</a>.</p>
+    <section class="wrap section" aria-labelledby="bring">
+      <h2 id="bring">What I bring</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>ML in production</h3>
+          <p>I take models from design to live traffic: TensorFlow personalization models validated by A/B testing, and an ML video-reframing model running in a production batch workflow.</p>
+        </article>
+        <article class="card">
+          <h3>High-scale, reliable services</h3>
+          <p>I design services that handle 100,000+ requests per second at 99.999% availability, with layered fallbacks so the storefront always has something to show.</p>
+        </article>
+        <article class="card">
+          <h3>Leverage through better tools</h3>
+          <p>I look for the change that removes work for everyone: a declarative decoding language that cut decoder time from months to weeks, and filtering that removed 70% of manual reviews.</p>
+        </article>
+        <article class="card">
+          <h3>Operational ownership</h3>
+          <p>I own what I ship. On call, I've resolved 1,384 tickets, including 206 high-severity incidents. At Tektronix I was Scrum Master for a team of 6.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="wrap section" aria-labelledby="work-title">
+      <h2 id="work-title">Selected work</h2>
+      <p class="section-intro">What I built and what changed.</p>
+      <div class="grid two">
+        <article class="card work">
+          <p class="meta">Amazon Prime Video</p>
+          <h3>Artwork Personalization</h3>
+          <p><strong>What I did:</strong> Led design and development of TensorFlow models that pick personalized storefront images for each customer.</p>
+          <p><strong>Result:</strong> 300,000+ requests per second at 40 ms p99.9 latency, and a measurable increase in hours watched, validated by A/B testing.</p>
+        </article>
+        <article class="card work">
+          <p class="meta">Amazon Prime Video</p>
+          <h3>Content Policy Review Filtering</h3>
+          <p><strong>What I did:</strong> Led design and development of a serverless AWS service that filters reviews based on what actually changed in a title's metadata, offers, and assets.</p>
+          <p><strong>Result:</strong> 70% fewer content policy reviews, less reviewer workload, and faster title publishing.</p>
+        </article>
+        <article class="card work">
+          <p class="meta">Amazon Prime Video</p>
+          <h3>Artwork Vending</h3>
+          <p><strong>What I did:</strong> Designed and built a modular artwork-serving service for the storefront, with layered fallback logic and image manipulation.</p>
+          <p><strong>Result:</strong> 100,000+ requests per second at 99.999% availability.</p>
+        </article>
+        <article class="card work">
+          <p class="meta">Amazon Prime Video</p>
+          <h3>Short-Form Video Transformation</h3>
+          <p><strong>What I did:</strong> Deployed an ML video-reframing model that converts 16:9 clips to 2:3 vertical, and built its deployment infrastructure and batch workflow.</p>
+          <p><strong>Result:</strong> 1,000+ videos converted per day, speeding up short-form catalog creation.</p>
+        </article>
+        <article class="card work">
+          <p class="meta">Tektronix</p>
+          <h3>Protocol Decoding Language</h3>
+          <p><strong>What I did:</strong> Designed a declarative language for defining serial protocol decoders on oscilloscopes.</p>
+          <p><strong>Result:</strong> Adding a new protocol decoder went from 3 months to 2 weeks. <a href="#patent">Patented.</a></p>
+        </article>
+        <article class="card work">
+          <p class="meta">Tektronix</p>
+          <h3>Oscilloscope Measurements</h3>
+          <p><strong>What I did:</strong> Developed 18 measurements for the 5 Series MSO, including amplitude, frequency, rise/fall time, skew, and slew rate.</p>
+          <p><strong>Result:</strong> Reused across the 3, 4, 5, 6, and 7 Series oscilloscopes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="patent" class="wrap section" aria-labelledby="patent-title">
+      <h2 id="patent-title">Patent</h2>
+      <article class="card patent">
+        <p class="meta">US 10,628,284 B2 · Issued April 21, 2020</p>
+        <h3>System and method for bitstream decoding with compiler-generated syntax trees</h3>
+        <p>
+          A declarative language for describing serial protocols, compiled into syntax trees that
+          decode bitstreams captured by an oscilloscope. It replaced hand-written decoders and cut the
+          time to support a new protocol from 3 months to 2 weeks.
+        </p>
+        <dl class="patent-facts">
+          <div><dt>Filed</dt><dd>April 9, 2018</dd></div>
+          <div><dt>Assignee</dt><dd>Tektronix, Inc.</dd></div>
+          <div><dt>Inventors</dt><dd>Mark Anderson Smith, Michael Scott Silliman, Andrew Loofburrow, Eric T. Anderson</dd></div>
+        </dl>
+        <a class="button" href="https://patents.google.com/patent/US10628284B2/en">Read the patent</a>
+      </article>
+    </section>
+
+    <section id="experience" class="wrap section" aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">2022 – Present</div>
+          <div>
+            <h3>Software Development Engineer II</h3>
+            <p class="meta">Amazon Prime Video · Seattle, WA (Remote)</p>
+            <p>ML personalization, artwork serving, content policy filtering, and short-form video. On call for 1,384 tickets, including 206 high-severity incidents.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2014 – 2021</div>
+          <div>
+            <h3>Software Engineer III (Scrum Master)</h3>
+            <p class="meta">Tektronix · Beaverton, OR</p>
+            <p>Protocol decoding, oscilloscope measurements, remote oscilloscope control over the internet, and probe calibration that carries over when swapping probe tips. Led sprint planning for a team of 6.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2010 – 2014</div>
+          <div>
+            <h3>B.S. in Computer Science, minor in Mathematics</h3>
+            <p class="meta">Oregon State University</p>
+            <p>3.95 GPA, summa cum laude.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="wrap section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Toolkit</h2>
+      <dl class="toolkit">
+        <div><dt>Languages</dt><dd>Java, C++, C#, Python, TypeScript</dd></div>
+        <div><dt>Machine learning</dt><dd>TensorFlow, SageMaker, A/B testing</dd></div>
+        <div><dt>AWS</dt><dd>Lambda, S3, Step Functions, DynamoDB, SQS, SNS, CloudWatch, CDK</dd></div>
+        <div><dt>Practices</dt><dd>Distributed systems, low-latency services, CI/CD, Agile/Scrum</dd></div>
+        <div><dt>Tools</dt><dd>Visual Studio, IntelliJ, JUnit/Mockito, Git, AI-assisted development</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" class="wrap section contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Let's talk</h2>
+      <p>The best way to reach me is email or LinkedIn.</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:ericanderson231@gmail.com">ericanderson231@gmail.com</a>
+        <a class="button" href="https://www.linkedin.com/in/eric-anderson-salem">LinkedIn</a>
+        <a class="button" href="https://github.com/ericanderson231">GitHub</a>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="wrap">
     <p>&copy; <span id="year"></span> Eric Anderson</p>
   </footer>
 
