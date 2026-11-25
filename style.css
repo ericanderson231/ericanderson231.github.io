@@ -176,6 +176,7 @@ h1 {
   margin-top: 0.35rem;
   color: var(--muted);
   font-size: 0.95rem;
+  text-wrap: balance;
 }
 
 /* Sections */
